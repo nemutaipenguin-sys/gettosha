@@ -179,113 +179,100 @@
 
         <!-- FEATURED NEW RELEASE SECTION -->
         <section id="new-release" class="py-24 bg-night-900/60 border-y border-night-800 relative">
-            <div class="max-w-6xl mx-auto px-6">
-                <!-- Section Title -->
-                <div class="text-center mb-16 space-y-2">
-                    <span class="text-xs tracking-widest text-moon-gold uppercase">New Release</span>
-                    <h2 class="text-2xl sm:text-3xl font-serif text-slate-100 tracking-widest">注目の新刊案内</h2>
-                    <div class="w-12 h-0.5 bg-moon-gold mx-auto mt-4"></div>
-                </div>
+    <div class="max-w-6xl mx-auto px-6">
+        <!-- Section Title -->
+        <div class="text-center mb-16 space-y-2">
+            <span class="text-xs tracking-widest text-moon-gold uppercase">New Release</span>
+            <h2 class="text-2xl sm:text-3xl font-serif text-slate-100 tracking-widest">注目の新刊案内</h2>
+            <div class="w-12 h-0.5 bg-moon-gold mx-auto mt-4"></div>
+        </div>
 
-                <!-- Book Showcase Card -->
-                <div class="bg-night-950 border border-night-700/80 rounded-md overflow-hidden shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8 p-8 md:p-12 items-center">
+        <!-- Book Showcase Card -->
+        <div class="bg-night-950 border border-night-700/80 rounded-md overflow-hidden shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8 p-8 md:p-12 items-center">
+            
+            <!-- Book Cover Column (左側：5カラム分) -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group cursor-pointer" onclick="openModal()">
+                    <!-- Book Frame Mockup -->
+                    <div class="w-64 h-96 sm:w-72 sm:h-[420px] bg-gradient-to-br from-slate-900 via-night-900 to-black rounded-sm border-2 border-moon-gold/60 p-6 flex flex-col justify-between shadow-2xl relative overflow-hidden transition-transform duration-500 group-hover:scale-[1.02] gold-border-glow">
+                        
+                        <!-- Background Decorative Graphics -->
+                        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-blue-950/40 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-0 right-0 w-32 h-32 bg-moon-gold/5 rounded-full blur-xl"></div>
+
+                        <!-- Top Label -->
+                        <div class="relative z-10 flex justify-between items-start">
+                            <span class="text-[10px] tracking-widest text-moon-gold border border-moon-gold/30 px-2 py-0.5">月灯社文庫</span>
+                            <span class="writing-mode-vertical text-xs tracking-widest text-slate-400">短編集</span>
+                        </div>
+
+                        <!-- Center Title (Vertical) -->
+                        <div class="relative z-10 my-auto text-center flex justify-center py-4">
+                            <div class="writing-mode-vertical font-serif text-2xl sm:text-3xl text-slate-100 font-bold tracking-[0.3em] leading-relaxed border-r border-moon-gold/30 pr-4">
+                                終焉のワルツ
+                            </div>
+                        </div>
+
+                        <!-- Bottom Author -->
+                        <div class="relative z-10 text-right">
+                            <p class="text-xs text-moon-amber tracking-widest font-serif">冬野春香 著</p>
+                        </div>
+                    </div>
                     
-                    <!-- Book Cover Column -->
-                    <div class="lg:col-span-5 flex justify-center">
-                        <div class="relative group cursor-pointer" onclick="openModal()">
-                            <!-- Book Frame Mockup -->
-                            <div class="w-64 h-96 sm:w-72 sm:h-[420px] bg-gradient-to-br from-slate-900 via-night-900 to-black rounded-sm border-2 border-moon-gold/60 p-6 flex flex-col justify-between shadow-2xl relative overflow-hidden transition-transform duration-500 group-hover:scale-[1.02] gold-border-glow">
-                                
-                                <!-- Background Decorative Graphics -->
-                                <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-blue-950/40 via-transparent to-transparent"></div>
-                                <div class="absolute bottom-0 right-0 w-32 h-32 bg-moon-gold/5 rounded-full blur-xl"></div>
-
-                                <!-- Top Label -->
-                                <div class="relative z-10 flex justify-between items-start">
-                                    <span class="text-[10px] tracking-widest text-moon-gold border border-moon-gold/30 px-2 py-0.5">月灯社文庫</span>
-                                    <span class="writing-mode-vertical text-xs tracking-widest text-slate-400">短編集</span>
-                                </div>
-
-                                <!-- Center Title (Vertical) -->
-                                <div class="relative z-10 my-auto text-center flex justify-center py-4">
-                                    <div class="writing-mode-vertical font-serif text-2xl sm:text-3xl text-slate-100 font-bold tracking-[0.3em] leading-relaxed border-r border-moon-gold/30 pr-4">
-                                        終焉のワルツ
-                                    </div>
-                                </div>
-
-                                <!-- Bottom Author -->
-                                <div class="relative z-10 text-right">
-                                    <p class="text-xs text-moon-amber tracking-widest font-serif">冬野春香 著</p>
-                                </div>
-                            </div>
-                            
-                            <!-- Hover Prompt -->
-                            <div class="absolute inset-0 bg-night-950/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-sm">
-                                <span class="px-4 py-2 border border-moon-gold text-moon-amber text-xs tracking-widest bg-night-900">
-                                    <i class="fa-regular fa-eye mr-2"></i>試し読み・詳細を見る
-                                </span>
-                            </div>
-                        </div>
+                    <!-- Hover Prompt -->
+                    <div class="absolute inset-0 bg-night-950/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-sm">
+                        <span class="px-4 py-2 border border-moon-gold text-moon-amber text-xs tracking-widest bg-night-900">
+                            <i class="fa-regular fa-eye mr-2"></i>試し読み・詳細を見る
+                        </span>
                     </div>
-
-                    <!-- Book Information Column -->
-                    <div class="aspect-[105/148]
-                        rounded-sm
-                        border border-night-700
-                        overflow-hidden
-                        shadow-lg
-                        hover:shadow-xl
-                        hover:-translate-y-1
-                        transition-all">
-
-                        <img src="syuenno.png"
-                             alt="終焉のワルツ"
-                             class="w-full h-full object-cover">
-                    </div>
-
-                        <h3 class="font-serif text-2xl sm:text-3xl text-slate-100 tracking-wider">
-                            『終焉のワルツ』
-                        </h3>
-
-                        <!-- Catchcopy -->
-                        <div class="border-l-2 border-moon-gold pl-4 py-1">
-                            <p class="font-serif text-lg text-moon-amber italic tracking-wide">
-                                どんな世界にも、必ず「終わり」が訪れる――。
-                            </p>
-                        </div>
-
-                        <!-- Synopsis Preview -->
-                        <div class="space-y-4 text-sm text-slate-300 leading-relaxed tracking-wider font-light">
-                            <p>
-                                あらゆる課題の解決として全国民の安楽死が採択された民主主義国家。女性たちの不産運動の末、静かに人口がゼロへと向かう日本。狂った世界を見つめるのは、生まれながらにして未来を得られなかった子ども達だった。
-                            </p>
-                            <p>
-                                この絶望を誰に問うのか。人々が犯した罪と、その果てに訪れる報いとしての破滅。滅びゆく世界で生きる子ども達の日常を、圧倒的なリアリティと繊細な筆致で描き出す。「最期の子どもたち」を描く、異色の終末SF短編集。
-                            </p>
-                        </div>
-
-                        <!-- Specs -->
-                        <div class="grid grid-cols-2 gap-4 pt-2 text-xs text-slate-400 border-t border-night-800">
-                            <div><span class="text-slate-500">レーベル：</span>月灯社文庫</div>
-                            <div><span class="text-slate-500">定価：</span>780円（税込）</div>
-                            <div><span class="text-slate-500">仕様：</span>文庫判 / 320頁</div>
-                            <div><span class="text-slate-500">ISBN：</span>978-4-00-999999-0</div>
-                        </div>
-
-                        <!-- CTA Buttons -->
-                        <div class="pt-4 flex flex-wrap gap-4">
-                            <button onclick="openModal()" class="px-6 py-3 bg-moon-gold hover:bg-moon-amber text-night-950 text-xs font-semibold tracking-widest transition-all">
-                                冒頭試し読み
-                            </button>
-                            <a href="#contact" class="px-6 py-3 border border-slate-700 hover:border-moon-gold text-slate-300 text-xs tracking-widest transition-all">
-                                書店様向け注文書
-                            </a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </section>
+
+            <!-- Book Information Column (右側：7カラム分) -->
+            <div class="lg:col-span-7 space-y-6">
+                <h3 class="font-serif text-2xl sm:text-3xl text-slate-100 tracking-wider">
+                    『終焉のワルツ』
+                </h3>
+
+                <!-- Catchcopy -->
+                <div class="border-l-2 border-moon-gold pl-4 py-1">
+                    <p class="font-serif text-lg text-moon-amber italic tracking-wide">
+                        どんな世界にも、必ず「終わり」が訪れる――。
+                    </p>
+                </div>
+
+                <!-- Synopsis Preview -->
+                <div class="space-y-4 text-sm text-slate-300 leading-relaxed tracking-wider font-light">
+                    <p>
+                        あらゆる課題の解決として全国民の安楽死が採択された民主主義国家。女性たちの不産運動の末、静かに人口がゼロへと向かう日本。狂った世界を見つめるのは、生まれながらにして未来を得られなかった子ども達だった。
+                    </p>
+                    <p>
+                        この絶望を誰に問うのか。人々が犯した罪と、その果てに訪れる報いとしての破滅。滅びゆく世界で生きる子ども達の日常を、圧倒的なリアリティと繊細な筆致で描き出す。「最期の子どもたち」を描く、異色の終末SF短編集。
+                    </p>
+                </div>
+
+                <!-- Specs -->
+                <div class="grid grid-cols-2 gap-4 pt-2 text-xs text-slate-400 border-t border-night-800">
+                    <div><span class="text-slate-500">レーベル：</span>月灯社文庫</div>
+                    <div><span class="text-slate-500">定価：</span>780円（税込）</div>
+                    <div><span class="text-slate-500">仕様：</span>文庫判 / 320頁</div>
+                    <div><span class="text-slate-500">ISBN：</span>978-4-00-999999-0</div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="pt-4 flex flex-wrap gap-4">
+                    <button onclick="openModal()" class="px-6 py-3 bg-moon-gold hover:bg-moon-amber text-night-950 text-xs font-semibold tracking-widest transition-all">
+                        冒頭試し読み
+                    </button>
+                    <a href="#contact" class="px-6 py-3 border border-slate-700 hover:border-moon-gold text-slate-300 text-xs tracking-widest transition-all">
+                        書店様向け注文書
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
         <!-- ABOUT US SECTION -->
         <section id="about" class="py-24 px-6 relative">
