@@ -164,17 +164,6 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- Decorative Vertical Text Display (Literary Vibe) -->
-                <div class="hidden lg:flex items-center justify-center gap-6 h-80 px-8 py-6 border-x border-night-700/60 bg-night-900/40 rounded-sm">
-                    <div class="writing-mode-vertical text-xs tracking-[0.3em] text-slate-400 h-full flex justify-between">
-                        <span>ぼくらが生まれたときすでに、世界の運命は決まっていた。</span>
-                    </div>
-                    <div class="writing-mode-vertical text-sm tracking-[0.35em] text-moon-amber h-full font-serif flex justify-between border-r border-night-700 pr-4">
-                        <span>この責任をだれに問えばいいのだろう。――</span>
-                    </div>
-                </div>
-            </div>
         </section>
 
         <!-- FEATURED NEW RELEASE SECTION -->
@@ -190,33 +179,12 @@
         <!-- Book Showcase Card -->
         <div class="bg-night-950 border border-night-700/80 rounded-md overflow-hidden shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8 p-8 md:p-12 items-center">
             
-            <!-- Book Cover Column (左側：5カラム分) -->
+            <!-- Book Cover Column (左側：5カラム分 / 画像表示に置き換え) -->
             <div class="lg:col-span-5 flex justify-center">
-                <div class="relative group cursor-pointer" onclick="openModal()">
-                    <!-- Book Frame Mockup -->
-                    <div class="w-64 h-96 sm:w-72 sm:h-[420px] bg-gradient-to-br from-slate-900 via-night-900 to-black rounded-sm border-2 border-moon-gold/60 p-6 flex flex-col justify-between shadow-2xl relative overflow-hidden transition-transform duration-500 group-hover:scale-[1.02] gold-border-glow">
-                        
-                        <!-- Background Decorative Graphics -->
-                        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-blue-950/40 via-transparent to-transparent"></div>
-                        <div class="absolute bottom-0 right-0 w-32 h-32 bg-moon-gold/5 rounded-full blur-xl"></div>
-
-                        <!-- Top Label -->
-                        <div class="relative z-10 flex justify-between items-start">
-                            <span class="text-[10px] tracking-widest text-moon-gold border border-moon-gold/30 px-2 py-0.5">月灯社文庫</span>
-                            <span class="writing-mode-vertical text-xs tracking-widest text-slate-400">短編集</span>
-                        </div>
-
-                        <!-- Center Title (Vertical) -->
-                        <div class="relative z-10 my-auto text-center flex justify-center py-4">
-                            <div class="writing-mode-vertical font-serif text-2xl sm:text-3xl text-slate-100 font-bold tracking-[0.3em] leading-relaxed border-r border-moon-gold/30 pr-4">
-                                終焉のワルツ
-                            </div>
-                        </div>
-
-                        <!-- Bottom Author -->
-                        <div class="relative z-10 text-right">
-                            <p class="text-xs text-moon-amber tracking-widest font-serif">冬野春香 著</p>
-                        </div>
+                <div class="relative group cursor-pointer w-64 sm:w-72" onclick="openModal()">
+                    <!-- Image Frame -->
+                    <div class="aspect-[105/148] rounded-sm border-2 border-moon-gold/60 overflow-hidden shadow-2xl transition-transform duration-500 group-hover:scale-[1.02] gold-border-glow">
+                        <img src="syuenno.png" alt="終焉のワルツ" class="w-full h-full object-cover">
                     </div>
                     
                     <!-- Hover Prompt -->
