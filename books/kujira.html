@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品試し読み - 月灯社</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        night: {
+                            950: '#060913',
+                            900: '#0b1021',
+                            800: '#151c36',
+                            700: '#212a4a',
+                        },
+                        moon: {
+                            gold: '#d4af37',
+                            amber: '#f3e5ab',
+                            silver: '#e2e8f0',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Shippori Mincho"', '"Noto Serif JP"', 'serif'],
+                        sans: ['"Inter"', '"Noto Sans JP"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts & Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600;700&family=Shippori+Mincho:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Noto Serif JP', serif;
+            background-color: #060913;
+            color: #e2e8f0;
+        }
+        /* 和紙風テクスチャ */
+        .washi-overlay {
+            background-image: radial-gradient(#d4af37 0.75px, transparent 0.75px);
+            background-size: 32px 32px;
+            opacity: 0.04;
+        }
+        /* カスタムスクロールバー */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0b1021;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #212a4a;
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d4af37;
+        }
+    </style>
+</head>
+<body class="relative min-h-screen bg-night-950 text-slate-300 flex flex-col justify-between selection:bg-moon-gold selection:text-night-950">
+
+    <!-- 背景装飾 -->
+    <div class="fixed inset-0 washi-overlay pointer-events-none z-50"></div>
+    <div class="fixed -top-40 -right-40 w-96 h-96 bg-moon-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="fixed top-1/2 -left-40 w-80 h-80 bg-blue-900/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-40 backdrop-blur-md bg-night-950/80 border-b border-night-700/50">
+        <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <span class="font-serif text-lg tracking-widest text-moon-amber font-semibold">月灯社</span>
+                <span class="text-xs text-slate-500 font-sans">| 試し読み</span>
+            </a>
+            <a href="#" class="text-xs text-slate-400 hover:text-moon-gold transition-colors flex items-center gap-2">
+                <i class="fa-solid fa-arrow-left"></i> トップへ戻る
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Page Container (モーダルのデザインを踏襲) -->
+    <main class="flex-1 flex items-center justify-center p-4 md:p-8 z-10">
+        <div class="bg-night-900 border border-night-700 rounded-md max-w-2xl w-full flex flex-col shadow-2xl overflow-hidden my-8">
+            
+            <!-- Page Header -->
+            <div class="px-6 py-4 border-b border-night-800 flex justify-between items-center bg-night-950/50">
+                <span class="font-serif text-sm text-moon-amber">『クジラ流星群』 冒頭試し読み</span>
+                <span class="text-xs text-slate-500">GETTOUSHA PUBLISHING</span>
+            </div>
+
+            <!-- Page Body (試読本文) -->
+            <div class="p-6 md:p-10 space-y-6 text-slate-300 font-serif leading-relaxed text-sm md:text-base tracking-wider">
+                <div class="border-b border-night-800 pb-6 text-center space-y-3">
+                    <h1 class="text-2xl md:text-3xl text-slate-100 font-medium">第一章 明日はクジラ流星群が見られる見込みです</h1>
+                    <p class="text-xs md:text-sm text-slate-400">――大変だ、大変だ、大変だぁ-!! クジラが、クジラが落っこってくるぞぉ！</p>
+                </div>
+                
+                <p>
+                    　その泡を食ったような大声が聞こえてきたのは、よく晴れた秋、いやもう冬だったかもしれない。そんな季節の変わり目のことだった。
+                </p>
+                <p>
+                    　とても間抜けな、毒気を抜かれるような声だった。声は続く。
+                </p>
+                <p>
+                    「大変だあ！　クジラがおっこちてくるぞ！」
+                </p>
+                <p>
+                    　僕は、呆れた。あまりに呆れて、色々とどうでもよくなった。おそらくこの声を聞いた大半の人間がそうだったろうと思う。どうやらここからそう遠くない場所に、阿呆がいるらしい。それも自分よりも大幅な阿呆が。
+                </p>
+                <p>
+                    　美しい青空に目を向けてから、僕は声がする方へ階段を降りた。階段を降りたすぐのところで、叫び声の主を悟る。みんなそいつから少し離れているからだった。半径2メートルの空白が、そう広くない廊下の真ん中にできていた。
+                </p>
+                <p>
+                    　
+                </p>
+                <p>
+                    『本日夜7時ごろ、クジラ流星群が観測されます。邦楽は南、晴れていれば、50頭ものクジラが確認できるはずです。寒くなってきましたが、みなさんぜひ、空を見上げて--』
+                </p>
+                <p>　
+                  　　つけっぱなしのテレビの音が響いている。隣の学食からだろう。僕は行き先を失ったつま先をそちらに向けた。とりあえず阿呆から距離をとろう、という至極常識的な思考の結果だった。
+                   　
+                </p>
+                <p>　
+                  　　「君だ、そこの君。手伝いたまえ」
+                </p>   
+                <p>　
+                  　　　今想定できる上で最悪な事態は、この声が僕に向けられているということだろう。
+                </p>       
+            </div>
+
+            <!-- Page Footer -->
+            <div class="px-6 py-5 border-t border-night-800 bg-night-950 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+                <span class="text-slate-500">※続きは製品版（単行本・電子書籍）にてお楽しみください。</span>
+                <div class="flex items-center gap-3">
+                    <a href="#" class="px-5 py-2.5 bg-moon-gold text-night-950 font-medium rounded-sm hover:bg-moon-amber transition-colors">
+                        書籍を購入する
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-6 border-t border-night-800 text-center text-xs text-slate-600 font-sans z-10">
+        &copy; GETTOUSHA PUBLISHING All Rights Reserved.
+    </footer>
+
+</body>
+</html>
