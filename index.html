@@ -306,6 +306,70 @@
             </div>
 
         </div>
+        <!-- Book3 Showcase Card -->
+        <div class="bg-night-950 border border-night-700/80 rounded-md overflow-hidden shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8 p-8 md:p-12 items-center">
+            
+            <!-- Book Cover Column (左側：5カラム分 / 画像表示に置き換え) -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group cursor-pointer w-64 sm:w-72" onclick="openModal()">
+                    <!-- Image Frame -->
+                    <div class="aspect-[105/148] rounded-sm border-2 border-moon-gold/60 overflow-hidden shadow-2xl transition-transform duration-500 group-hover:scale-[1.02] gold-border-glow">
+                        <img src="covers/kyokainomachi.png" alt="境界の街" class="w-full h-full object-cover">
+                    </div>
+                    
+                    <!-- Hover Prompt -->
+                    <div class="absolute inset-0 bg-night-950/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-sm">
+                        <span class="px-4 py-2 border border-moon-gold text-moon-amber text-xs tracking-widest bg-night-900">
+                            <i class="fa-regular fa-eye mr-2"></i>試し読み・詳細を見る
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book Information Column (右側：7カラム分) -->
+            <div class="lg:col-span-7 space-y-6">
+                <h3 class="font-serif text-2xl sm:text-3xl text-slate-100 tracking-wider">
+                    『すべて仔羊は泥の中に眠る』
+                </h3>
+
+                <!-- Catchcopy -->
+                <div class="border-l-2 border-moon-gold pl-4 py-1">
+                    <p class="font-serif text-lg text-moon-amber italic tracking-wide">
+                        誰も無傷ではいられない。
+                    </p>
+                </div>
+
+                <!-- Synopsis Preview -->
+                <div class="space-y-4 text-sm text-slate-300 leading-relaxed tracking-wider font-light">
+                    <p>
+                        涼音ちゃんちに現れた赤いコートの女は、どうやら同級生全員の家を順に訪れているらしい。女を捕まえようと画策する私たちだったが（「どうがおばけでありますように」）。
+                    </p>
+                    <p>
+                        若者の瑞々しさが生み出した、暗黒の連作ホラー。
+                    </p>
+                </div>
+
+                <!-- Specs -->
+                <div class="grid grid-cols-2 gap-4 pt-2 text-xs text-slate-400 border-t border-night-800">
+                    <div><span class="text-slate-500">レーベル：</span>月灯社文庫</div>
+                    <div><span class="text-slate-500">定価：</span>820円（税込）</div>
+                    <div><span class="text-slate-500">仕様：</span>文庫判 / 320頁</div>
+                    <div><span class="text-slate-500">ISBN：</span>978-4-444-44444-4</div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="pt-4 flex flex-wrap gap-4">
+                    <a href="books/kohitsuji.html"
+                                class="text-moon-amber hover:underline">試し読み →</a>
+                </div>
+                <div class="grid grid-cols-1 gap-4 pt-4 flex flex-wrap gap-4">
+                    <a href="#contact" class="px-6 py-3 border border-slate-700 hover:border-moon-gold text-slate-300 text-xs tracking-widest transition-all">
+                        書店様向け注文書
+                    </a>
+                </div>
+            </div>
+
+        </div>        
     </div>
 </section>
 
